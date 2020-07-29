@@ -1,0 +1,18 @@
+
+<script src="G:/Atom/a-frame/aframe.min.js"></script>
+<script src="G:/Atom/a-frame/aframe-ar.js"></script>
+<script>THREEx.ArToolkitContext.baseURL = 'G:/Atom/a-frame/three.js/'</script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded artoolkit='sourceType: webcam;'>
+	<a-sphere src="G:\Atom\a-frame\earth_atmos_4096.jpg" radius="0.5" position="0 0.5 0" segments-height="53">
+         <a-animation attribute="scale"
+              dur="1000"
+              from= "1 1 1"
+              to="2 2 2"
+              direction='alternate-reverse'
+              easing= "ease-in-out-circ"
+              repeat="indefinite"></a-animation>
+     </a-sphere>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>

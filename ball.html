@@ -1,0 +1,22 @@
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script>THREEx.ArToolkitContext.baseURL = 'G:/Atom/a-frame/three.js/'</script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded artoolkit='sourceType:webcam;'>
+
+
+      <a-sphere position='-0.5 0 -0.5'  color="blue" radius = "0.50">
+        <a-animation
+          attribute="color"
+          dur="10000"
+          from="white"
+          to="red"
+          repeat="indefinite"></a-animation>
+
+      </a-sphere>
+
+
+    <a-marker-camera type='pattern' patternUrl='G:/Atom/a-frame/apple.patt'></a-marker-camera>
+  </a-scene>
+</body>
